@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scrapetastic</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="container">
+  <h3 class="header">Scrapetastic Frontend</h3>
+  <div id="buttons">
+    <button class="btn" id="time-id-sort">Sort By Most Recent</button>
+    <button class="btn" id="title-sort">Sort By Title</button>
+    <button class="btn" id="clear-data">Clear Collection</button>
+  </div>
+  <table id="results">
+    <thead>
+      <tr>
+        <th id="scrape-id">ID</th>
+        <th id="scrape-name">Name</th>
+        <th id="scrape-link">Link</th>
+      </tr>
+    </thead>
+    <tbody class="table-body-list">
+      <!-- Results from DB here -->
+    </tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+
+</html>
